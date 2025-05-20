@@ -17,6 +17,16 @@ public class Lista_professores {
     @Column(name ="ativo" ,nullable = false )
     private boolean ativo;
 
+    public Lista_professores(String nome, String numero_matricula, int salario, boolean ativo) {
+        this.nome = nome;
+        this.numero_matricula = numero_matricula;
+        this.salario = salario;
+        this.ativo = ativo;
+    }
+
+    public Lista_professores() {
+    }
+
     public String getNome() {
         return nome;
     }
