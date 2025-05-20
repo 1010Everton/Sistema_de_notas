@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Página de Login</title>
+    <title>pagina de cadastro de aluno</title>
     <style>
         body {
           font-family: Arial, sans-serif;
@@ -66,13 +66,18 @@
 <body>
 
 <div class="login-container">
-    <h2>Login</h2>
+    <h2>Cadastro do aluno</h2>
     <form action="/login" method="POST">
-        <input type="text" name="username" placeholder="Usuário" required />
-        <input type="password" name="password" placeholder="Senha" required />
-        <input type="media" name="media" placeholder="media" required />
-        <input type="serie" name="serie" placeholder="serie" required />
-        <input type="passou" name="passou" placeholder="passou" required />
+        <input type="text" name="nome" placeholder="nome" required />
+        <input type="text" name="senha" placeholder="Senha" required />
+        <input type="text" name="media" placeholder="media" required />
+        <input type="text" name="serie" placeholder="serie" required />
+        <label for="passou">Aprovado?</label>
+        <select name="aprovado" id="passou" required>
+            <option value="">Selecione</option>
+            <option value="sim">Sim</option>
+            <option value="nao">Não</option>
+        </select>
         <button type="submit">Entrar</button>
     </form>
     <div class="footer">

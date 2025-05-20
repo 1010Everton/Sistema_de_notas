@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Página Principal</title>
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          background: #f1f1f1;
+          margin: 0;
+          padding: 0;
+        }
+
+        header {
+          display: flex;
+          justify-content: flex-end;
+          padding: 20px;
+          background-color: #007BFF;
+          color: white;
+        }
+
+        header a {
+          color: white;
+          text-decoration: none;
+          margin-left: 20px;
+          font-weight: bold;
+        }
+
+        main {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 80vh;
+          flex-direction: column;
+        }
+
+        table {
+          background-color: white;
+          border-radius: 10px;
+          box-shadow: 0 0 10px rgba(0,0,0,0.1);
+          padding: 40px;
+          text-align: center;
+        }
+
+        .search-icon {
+          font-size: 48px;
+          color: #007BFF;
+        }
+
+        input[type="text"] {
+          padding: 10px;
+          width: 250px;
+          margin-top: 20px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+        }
+
+        button {
+          padding: 10px 20px;
+          margin-top: 10px;
+          background-color: #007BFF;
+          color: white;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+        }
+
+        button:hover {
+          background-color: #0056b3;
+        }
+    </style>
+
+    <!-- Ícone da lupa (usando Font Awesome CDN) -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<header>
+    <a href="">Login Professores</a>
+    <a href="/cadastro_aluno">Cadastro</a>
+</header>
+
+<main>
+    <table>
+        <tr>
+            <td>
+                <i class="fas fa-search search-icon"></i>
+                <h2>Escreva sua matrícula para descobrir sua nota</h2>
+                <input type="text" placeholder="Digite sua matrícula">
+                <br>
+                <button>Pesquisar</button>
+            </td>
+        </tr>
+    </table>
+</main>
+
+</body>
+</html>
