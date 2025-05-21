@@ -32,8 +32,36 @@ public class Lista_alunos {
     public Lista_alunos() {
     }
 
-    // Getters e Setters
-    public String getAprovado() { return aprovado; }
-    public void setAprovado(String aprovado) { this.aprovado = aprovado; }
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getSerie() {
+        return serie;
+    }
+
+    public void setSerie(String serie) {
+        this.serie = serie;
+    }
+
+    public String getMedia() {
+        return media;
+    }
+
+    public void setMedia(String media) {
+        this.media = media;
+    }
+
+    public String getAprovado() {
+        return aprovado;
+    }
+
+    public void setAprovado(String aprovado) {
+        this.aprovado = aprovado;
+    }
 }
 
