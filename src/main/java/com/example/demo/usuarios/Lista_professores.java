@@ -5,26 +5,41 @@ import jakarta.persistence.*;
 @Entity
 @Table(name = "Lista_prof")
 public class Lista_professores {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    @Column(name ="nome" ,nullable = false )
+
+    @Column(name = "nome", nullable = false)
     private String nome;
-    @Column(name ="numero_matricula" ,nullable = false )
-    private String numero_matricula;
-    @Column(name ="salario" ,nullable = false )
+
+    @Column(name = "numero_matricula", nullable = false)
+    private String numeroMatricula;
+
+    @Column(name = "salario", nullable = false)
     private int salario;
-    @Column(name ="ativo" ,nullable = false )
+
+    @Column(name = "ativo", nullable = false)
     private boolean ativo;
 
+    public Lista_professores() {
+    }
+
+    // Construtor com parâmetros
     public Lista_professores(String nome, String numero_matricula, int salario, boolean ativo) {
         this.nome = nome;
-        this.numero_matricula = numero_matricula;
+        this.numeroMatricula = numero_matricula;
         this.salario = salario;
         this.ativo = ativo;
     }
 
-    public Lista_professores() {
+    // Getters e Setters
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getNome() {
@@ -36,11 +51,11 @@ public class Lista_professores {
     }
 
     public String getNumero_matricula() {
-        return numero_matricula;
+        return numeroMatricula;
     }
 
     public void setNumero_matricula(String numero_matricula) {
-        this.numero_matricula = numero_matricula;
+        this.numeroMatricula = numero_matricula;
     }
 
     public int getSalario() {
